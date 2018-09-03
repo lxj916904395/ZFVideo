@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface BusinessLayer : NSObject
++ (void)business;
 
 @end

@@ -8,6 +8,14 @@
 
 #import "NetworkLayer.h"
 
-@implementation NetworkLayer
+#import "AFNetworking.h"
 
+@implementation NetworkLayer
++ (void)net{
+    NSLog(@"网络请求");
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager new];
+//    manager.responseSerializer.serializer = AFHTTPResponseSerializer;
+    
+}
 @end

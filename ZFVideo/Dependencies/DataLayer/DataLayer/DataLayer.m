@@ -9,5 +9,7 @@
 #import "DataLayer.h"
 
 @implementation DataLayer
-
++ (void)data{
+    NSLog(@"数据");
+}
 @end

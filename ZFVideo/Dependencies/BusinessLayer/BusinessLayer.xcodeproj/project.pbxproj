@@ -242,22 +242,36 @@
 		CD2AD2A7213D5BCC009D6D94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../DataLayer\"",
+					"\"$(SRCROOT)/../NetworkLayer\"",
+					"\"$(SRCROOT)/../UtilLayer\"",
+					"\"$(SRCROOT)/../../../Pods/Headers/Public/SDWebImage\"",
+				);
 			};
 			name = Debug;
 		};
 		CD2AD2A8213D5BCC009D6D94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../DataLayer\"",
+					"\"$(SRCROOT)/../NetworkLayer\"",
+					"\"$(SRCROOT)/../UtilLayer\"",
+					"\"$(SRCROOT)/../../../Pods/Headers/Public/SDWebImage\"",
+				);
 			};
 			name = Release;
 		};

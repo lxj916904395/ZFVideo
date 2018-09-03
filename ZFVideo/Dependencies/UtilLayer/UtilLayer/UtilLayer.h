@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface UtilLayer : NSObject
++ (NSString*)md5:(NSString*)string;
 
 @end

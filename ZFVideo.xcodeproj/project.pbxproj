@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FE4EA471E01D1F8BCF10DED /* libPods-ZFVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CA723103D6721258855249 /* libPods-ZFVideo.a */; };
 		CD2AD223213D5AFF009D6D94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2AD222213D5AFF009D6D94 /* AppDelegate.m */; };
 		CD2AD226213D5AFF009D6D94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2AD225213D5AFF009D6D94 /* ViewController.m */; };
 		CD2AD229213D5AFF009D6D94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2AD227213D5AFF009D6D94 /* Main.storyboard */; };
@@ -15,6 +16,10 @@
 		CD2AD231213D5B03009D6D94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2AD230213D5B03009D6D94 /* main.m */; };
 		CD2AD23B213D5B03009D6D94 /* ZFVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2AD23A213D5B03009D6D94 /* ZFVideoTests.m */; };
 		CD2AD246213D5B03009D6D94 /* ZFVideoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2AD245213D5B03009D6D94 /* ZFVideoUITests.m */; };
+		CD2AD2CA213D5C1F009D6D94 /* libBusinessLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2AD2AE213D5BF5009D6D94 /* libBusinessLayer.a */; };
+		CD2AD2CB213D5C1F009D6D94 /* libDataLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2AD2B4213D5BFF009D6D94 /* libDataLayer.a */; };
+		CD2AD2CC213D5C1F009D6D94 /* libNetworkLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2AD2BA213D5C07009D6D94 /* libNetworkLayer.a */; };
+		CD2AD2CD213D5C1F009D6D94 /* libUtilLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2AD2C0213D5C0E009D6D94 /* libUtilLayer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +37,68 @@
 			remoteGlobalIDString = CD2AD21D213D5AFF009D6D94;
 			remoteInfo = ZFVideo;
 		};
+		CD2AD2AD213D5BF5009D6D94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2AD2A9213D5BF5009D6D94 /* BusinessLayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD2AD29D213D5BCC009D6D94;
+			remoteInfo = BusinessLayer;
+		};
+		CD2AD2B3213D5BFF009D6D94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2AD2AF213D5BFF009D6D94 /* DataLayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD2AD288213D5BA2009D6D94;
+			remoteInfo = DataLayer;
+		};
+		CD2AD2B9213D5C07009D6D94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2AD2B5213D5C07009D6D94 /* NetworkLayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD2AD25E213D5B3B009D6D94;
+			remoteInfo = NetworkLayer;
+		};
+		CD2AD2BF213D5C0E009D6D94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2AD2BB213D5C0E009D6D94 /* UtilLayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD2AD273213D5B66009D6D94;
+			remoteInfo = UtilLayer;
+		};
+		CD2AD2C1213D5C19009D6D94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2AD2BB213D5C0E009D6D94 /* UtilLayer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CD2AD272213D5B66009D6D94;
+			remoteInfo = UtilLayer;
+		};
+		CD2AD2C3213D5C19009D6D94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2AD2B5213D5C07009D6D94 /* NetworkLayer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CD2AD25D213D5B3B009D6D94;
+			remoteInfo = NetworkLayer;
+		};
+		CD2AD2C5213D5C19009D6D94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2AD2AF213D5BFF009D6D94 /* DataLayer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CD2AD287213D5BA2009D6D94;
+			remoteInfo = DataLayer;
+		};
+		CD2AD2C7213D5C19009D6D94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2AD2A9213D5BF5009D6D94 /* BusinessLayer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CD2AD29C213D5BCC009D6D94;
+			remoteInfo = BusinessLayer;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0561D3A8F9E7E80906E85AAF /* Pods-ZFVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZFVideo/Pods-ZFVideo.release.xcconfig"; sourceTree = "<group>"; };
+		99CA723103D6721258855249 /* libPods-ZFVideo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZFVideo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFD803D1399856E3F01459C4 /* Pods-ZFVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZFVideo/Pods-ZFVideo.debug.xcconfig"; sourceTree = "<group>"; };
 		CD2AD21E213D5AFF009D6D94 /* ZFVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZFVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2AD221213D5AFF009D6D94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CD2AD222213D5AFF009D6D94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +115,10 @@
 		CD2AD241213D5B03009D6D94 /* ZFVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZFVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2AD245213D5B03009D6D94 /* ZFVideoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFVideoUITests.m; sourceTree = "<group>"; };
 		CD2AD247213D5B03009D6D94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD2AD2A9213D5BF5009D6D94 /* BusinessLayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BusinessLayer.xcodeproj; path = BusinessLayer/BusinessLayer.xcodeproj; sourceTree = "<group>"; };
+		CD2AD2AF213D5BFF009D6D94 /* DataLayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DataLayer.xcodeproj; path = DataLayer/DataLayer.xcodeproj; sourceTree = "<group>"; };
+		CD2AD2B5213D5C07009D6D94 /* NetworkLayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkLayer.xcodeproj; path = NetworkLayer/NetworkLayer.xcodeproj; sourceTree = "<group>"; };
+		CD2AD2BB213D5C0E009D6D94 /* UtilLayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UtilLayer.xcodeproj; path = UtilLayer/UtilLayer.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +126,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2AD2CA213D5C1F009D6D94 /* libBusinessLayer.a in Frameworks */,
+				CD2AD2CB213D5C1F009D6D94 /* libDataLayer.a in Frameworks */,
+				CD2AD2CC213D5C1F009D6D94 /* libNetworkLayer.a in Frameworks */,
+				CD2AD2CD213D5C1F009D6D94 /* libUtilLayer.a in Frameworks */,
+				0FE4EA471E01D1F8BCF10DED /* libPods-ZFVideo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +158,8 @@
 				CD2AD239213D5B03009D6D94 /* ZFVideoTests */,
 				CD2AD244213D5B03009D6D94 /* ZFVideoUITests */,
 				CD2AD21F213D5AFF009D6D94 /* Products */,
+				CD2AD2C9213D5C1F009D6D94 /* Frameworks */,
+				D5DAD2A40E75440EFA800C8C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +176,8 @@
 		CD2AD220213D5AFF009D6D94 /* ZFVideo */ = {
 			isa = PBXGroup;
 			children = (
+				CD2AD254213D5B19009D6D94 /* UI */,
+				CD2AD253213D5B0B009D6D94 /* Dependencies */,
 				CD2AD221213D5AFF009D6D94 /* AppDelegate.h */,
 				CD2AD222213D5AFF009D6D94 /* AppDelegate.m */,
 				CD2AD224213D5AFF009D6D94 /* ViewController.h */,
@@ -132,6 +209,73 @@
 			path = ZFVideoUITests;
 			sourceTree = "<group>";
 		};
+		CD2AD253213D5B0B009D6D94 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				CD2AD2BB213D5C0E009D6D94 /* UtilLayer.xcodeproj */,
+				CD2AD2B5213D5C07009D6D94 /* NetworkLayer.xcodeproj */,
+				CD2AD2AF213D5BFF009D6D94 /* DataLayer.xcodeproj */,
+				CD2AD2A9213D5BF5009D6D94 /* BusinessLayer.xcodeproj */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		CD2AD254213D5B19009D6D94 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CD2AD2AA213D5BF5009D6D94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD2AD2AE213D5BF5009D6D94 /* libBusinessLayer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD2AD2B0213D5BFF009D6D94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD2AD2B4213D5BFF009D6D94 /* libDataLayer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD2AD2B6213D5C07009D6D94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD2AD2BA213D5C07009D6D94 /* libNetworkLayer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD2AD2BC213D5C0E009D6D94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD2AD2C0213D5C0E009D6D94 /* libUtilLayer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD2AD2C9213D5C1F009D6D94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99CA723103D6721258855249 /* libPods-ZFVideo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5DAD2A40E75440EFA800C8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFD803D1399856E3F01459C4 /* Pods-ZFVideo.debug.xcconfig */,
+				0561D3A8F9E7E80906E85AAF /* Pods-ZFVideo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +283,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD2AD24A213D5B03009D6D94 /* Build configuration list for PBXNativeTarget "ZFVideo" */;
 			buildPhases = (
+				8285C7629309BFAA92F809F3 /* [CP] Check Pods Manifest.lock */,
 				CD2AD21A213D5AFF009D6D94 /* Sources */,
 				CD2AD21B213D5AFF009D6D94 /* Frameworks */,
 				CD2AD21C213D5AFF009D6D94 /* Resources */,
@@ -146,6 +291,10 @@
 			buildRules = (
 			);
 			dependencies = (
+				CD2AD2C2213D5C19009D6D94 /* PBXTargetDependency */,
+				CD2AD2C4213D5C19009D6D94 /* PBXTargetDependency */,
+				CD2AD2C6213D5C19009D6D94 /* PBXTargetDependency */,
+				CD2AD2C8213D5C19009D6D94 /* PBXTargetDependency */,
 			);
 			name = ZFVideo;
 			productName = ZFVideo;
@@ -221,6 +370,24 @@
 			mainGroup = CD2AD215213D5AFF009D6D94;
 			productRefGroup = CD2AD21F213D5AFF009D6D94 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CD2AD2AA213D5BF5009D6D94 /* Products */;
+					ProjectRef = CD2AD2A9213D5BF5009D6D94 /* BusinessLayer.xcodeproj */;
+				},
+				{
+					ProductGroup = CD2AD2B0213D5BFF009D6D94 /* Products */;
+					ProjectRef = CD2AD2AF213D5BFF009D6D94 /* DataLayer.xcodeproj */;
+				},
+				{
+					ProductGroup = CD2AD2B6213D5C07009D6D94 /* Products */;
+					ProjectRef = CD2AD2B5213D5C07009D6D94 /* NetworkLayer.xcodeproj */;
+				},
+				{
+					ProductGroup = CD2AD2BC213D5C0E009D6D94 /* Products */;
+					ProjectRef = CD2AD2BB213D5C0E009D6D94 /* UtilLayer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CD2AD21D213D5AFF009D6D94 /* ZFVideo */,
@@ -229,6 +396,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CD2AD2AE213D5BF5009D6D94 /* libBusinessLayer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBusinessLayer.a;
+			remoteRef = CD2AD2AD213D5BF5009D6D94 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD2AD2B4213D5BFF009D6D94 /* libDataLayer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDataLayer.a;
+			remoteRef = CD2AD2B3213D5BFF009D6D94 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD2AD2BA213D5C07009D6D94 /* libNetworkLayer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNetworkLayer.a;
+			remoteRef = CD2AD2B9213D5C07009D6D94 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD2AD2C0213D5C0E009D6D94 /* libUtilLayer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUtilLayer.a;
+			remoteRef = CD2AD2BF213D5C0E009D6D94 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CD2AD21C213D5AFF009D6D94 /* Resources */ = {
@@ -256,6 +454,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8285C7629309BFAA92F809F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZFVideo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CD2AD21A213D5AFF009D6D94 /* Sources */ = {
@@ -296,6 +515,26 @@
 			isa = PBXTargetDependency;
 			target = CD2AD21D213D5AFF009D6D94 /* ZFVideo */;
 			targetProxy = CD2AD242213D5B03009D6D94 /* PBXContainerItemProxy */;
+		};
+		CD2AD2C2213D5C19009D6D94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UtilLayer;
+			targetProxy = CD2AD2C1213D5C19009D6D94 /* PBXContainerItemProxy */;
+		};
+		CD2AD2C4213D5C19009D6D94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NetworkLayer;
+			targetProxy = CD2AD2C3213D5C19009D6D94 /* PBXContainerItemProxy */;
+		};
+		CD2AD2C6213D5C19009D6D94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DataLayer;
+			targetProxy = CD2AD2C5213D5C19009D6D94 /* PBXContainerItemProxy */;
+		};
+		CD2AD2C8213D5C19009D6D94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BusinessLayer;
+			targetProxy = CD2AD2C7213D5C19009D6D94 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -431,6 +670,7 @@
 		};
 		CD2AD24B213D5B03009D6D94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFD803D1399856E3F01459C4 /* Pods-ZFVideo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,11 +682,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lxj.ZFVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/ZFVideo/Dependencies/BusinessLayer/**",
+					"$(SRCROOT)/ZFVideo/Dependencies/DataLayer/**",
+					"$(SRCROOT)/ZFVideo/Dependencies/NetworkLayer/**",
+					"$(SRCROOT)/ZFVideo/Dependencies/UtilLayer/**",
+				);
 			};
 			name = Debug;
 		};
 		CD2AD24C213D5B03009D6D94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0561D3A8F9E7E80906E85AAF /* Pods-ZFVideo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +705,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lxj.ZFVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/ZFVideo/Dependencies/BusinessLayer/**",
+					"$(SRCROOT)/ZFVideo/Dependencies/DataLayer/**",
+					"$(SRCROOT)/ZFVideo/Dependencies/NetworkLayer/**",
+					"$(SRCROOT)/ZFVideo/Dependencies/UtilLayer/**",
+				);
 			};
 			name = Release;
 		};

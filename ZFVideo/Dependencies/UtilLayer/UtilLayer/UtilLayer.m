@@ -9,5 +9,8 @@
 #import "UtilLayer.h"
 
 @implementation UtilLayer
-
++ (NSString*)md5:(NSString*)string{
+    NSLog(@"工具");
+    return @"";
+}
 @end

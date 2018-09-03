@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface NetworkLayer : NSObject
++ (void)net;
 
 @end
