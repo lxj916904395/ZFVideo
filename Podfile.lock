@@ -14,23 +14,41 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - JKDataHelper (0.1.8)
+  - JKRouter (0.2.6.7):
+    - JKDataHelper
+  - Masonry (1.1.0)
   - SDWebImage (4.4.1):
     - SDWebImage/Core (= 4.4.1)
   - SDWebImage/Core (4.4.1)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - AFNetworking
+  - JKRouter
+  - Masonry
   - SDWebImage
+  - YYKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - JKDataHelper
+    - JKRouter
+    - Masonry
     - SDWebImage
+    - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  JKDataHelper: a6375416ddd0a47a4eb9c809131f195f19824b70
+  JKRouter: 4f8708b2d9f2158567e711c33c129c0bab7437c5
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: b26c7a5c83d8f0d5a81b4480224cda0f3bdc8c27
+PODFILE CHECKSUM: 4039d1ee78a3154502b59b60476abaa35b94e4a3
 
 COCOAPODS: 1.5.3

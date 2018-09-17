@@ -14,7 +14,7 @@
 + (void)net{
     NSLog(@"网络请求");
     
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager new];
+//    AFHTTPSessionManager *manager = [AFHTTPSessionManager new];
 //    manager.responseSerializer.serializer = AFHTTPResponseSerializer;
     
 }
